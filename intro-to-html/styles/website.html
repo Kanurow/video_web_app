@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises</title>
+    <style>
+        #nike {
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+        #stock {
+            color: green;
+        }
+        .add-to-cart {
+            background-color: rgb(224, 224, 28);
+            padding: .5em 1em;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+        }
+        .add-to-cart:hover {
+            background-color: rgb(190, 128, 11);
+            opacity: 0.7;
+        }
+        .add-to-cart:active {
+            opacity: .9;
+        }
+        .buy-now {
+            background-color: orange;
+            border-radius: 25px;
+            width: 110px;
+            height: 30px;
+            border: none;
+            cursor: pointer;
+        }
+        .buy-now:hover {
+            opacity: 0.6;
+        }
+        .buy-now:active {
+            opacity: .8;
+        }
+        #return-home:hover {
+            color: red;
+        }
+
+        .page-navigation {
+            background-color: silver;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 8px;
+            padding-right: 8px;
+            margin-top: 20px;
+            margin-right: 5px;
+            margin-left: 5px;
+            
+        }
+        .page-numbers {
+            color: red;
+        }
+        .page-numbers:hover {
+            text-decoration: overline;
+        }
+        .stretch-button {
+            color: white;
+            background-color: green;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 20px;
+            padding-left: 20px;
+            border: none;
+            font-size: 15px;
+            transition: padding-bottom .25s, padding-right .25s, font-size .25s;
+        }
+        .stretch-button:hover {
+            font-size: 20px;
+            padding-top: 12.5;
+            padding-bottom: 12.5px;
+            padding-right: 25px;
+            padding-left: 26px;
+        }
+        .number-button {
+            background-color: lawngreen;
+            color: red;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 8px;
+            border: none;
+            font-size: 15px;
+            font-weight: bold;
+            margin-right: 10px;
+            margin-bottom: 25px;
+            transition: padding-right.3s, padding-left .3s;
+            
+        }
+        .number-button:hover {
+            color: lawngreen;
+            background-color: red;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        .number-button:active {
+            opacity: .6;
+        }
+        .names-bar {
+            display: inline-block;
+            border-radius: 15px;
+            font-size: 14px;
+            padding-left: 15px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border: solid;
+            border-width: 1px;
+        }
+        .email-bar {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border: solid;
+            margin-top: 15px;
+            border-width: 1px;
+            font-size: 14px;
+            border-radius: 15px;
+            display: block;
+            padding-left: 15px;
+            padding-right: 210px;
+        }
+        .signup-button {
+
+            display: block;
+            background-color: blue;
+            color: white;
+            margin-top: 15px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 180px;
+            padding-right: 180px;
+            font-size: 14px;
+            border-radius: 15px;
+        }
+        .grid-title {
+            background-color: red;
+            font-size: 24px;
+            margin-top: 200px;
+            border-color: blue;
+            margin-bottom: 50px;
+        }
+        .task1 {
+            display: grid;
+            grid-template-columns: 200px 75px;
+        }
+        .task2 {
+            display: grid;
+            grid-template-columns: 50px 1fr 75px;
+        }
+        .task3 {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            row-gap: 10px;
+            column-gap: 20px;
+            height: 50px;
+        }
+
+        
+
+    </style>
+</head>
+<body style="margin-bottom: 400px;">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos illo, beatae adipisci dignissimos veritatis, sequi harum aliquid nihil obcaecati exercitationem at nesciunt ipsam modi nemo alias illum iure asperiores ex! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odit obcaecati voluptas esse quos, omnis, pariatur, non laudantium doloribus nesciunt quasi dolores impedit rem maiores excepturi molestias blanditiis quisquam? Reprehenderit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quibusdam voluptas maxime ducimus possimus tempore rerum tenetur accusantium at, optio quo repudiandae quasi blanditiis, distinctio facilis vel a ea asperiores?</p>
+
+
+
+
+
+    <a href="www.youtube.com" target="_blank" id="return-home">Back to Amazon
+    </a>
+    
+    <p id="nike">Nike Black Running Shoes</p>
+    <p id="stock">$40 - in stock</p>
+    <p>Free delivery tomorrow</p>
+    <button class="add-to-cart">Add to cart</button>
+    <button class="buy-now">Buy Now</button>
+    <br>
+
+    <button class="page-navigation">Back</button>
+    <a href="#" class="page-numbers">1</a>
+    <a href="#" class="page-numbers">2</a>
+    <a href="#" class="page-numbers">3</a>
+    <a href="#" class="page-numbers">4</a>
+    <a href="#" class="page-numbers">5</a>
+    <button class="page-navigation">Next</button>
+
+    <br>
+    <br>
+    <button class="stretch-button">Stretch</button>
+    <br>
+    <br>
+
+    <button class="number-button">One</button>
+    <button class="number-button">Two</button>
+    <button class="number-button">Three</button>
+    <br>
+
+    <input class="names-bar" type="text" placeholder="First name">
+
+    <input class="names-bar" type="text" placeholder="Last name">
+
+    <input class="email-bar" type="email" placeholder="Email">
+
+    <button class="signup-button">Sign Up</button>
+
+    <div class="grid-title">
+        Grid Practise
+    </div>
+    <div style="
+        display: grid;
+        grid-template-columns: 100px 200px;
+    
+    ">
+        <div style="background-color: lightblue;
+        
+        ">
+            div 1
+        </div>
+        <div style="background-color: lightgreen;"
+        
+        >div 2 <p>Hello</p>
+    
+        </div>
+    </div>
+
+
+
+        <div style="
+        display: grid;
+        grid-template-columns: 100px 100px;
+        margin-top: 30px;
+        ">
+            <div style="background-color: lightblue;
+            
+            ">
+                div 1
+            </div>
+
+            <div style="background-color: lightgreen;
+            
+            ">
+                div 2
+            </div>
+            <div style="background-color: lightpink;
+            
+            ">
+                div 3
+            </div>
+        </div>
+
+
+
+        <div style="
+        display: grid;
+        grid-template-columns: 100px 1fr 1fr;
+        margin-top: 30px;
+        ">
+            <div style="background-color: lightblue;
+            
+            ">
+                div 1
+            </div>
+
+            <div style="background-color: lightgreen;
+            
+            ">
+                div 2
+            </div>
+            <div style="background-color: lightpink;
+            
+            ">
+                div 3
+            </div>
+        </div>
+
+        <div class="task1">
+            <div style="background-color: red;">200px</div>
+            <div style="background-color: yellow;">75px</div>
+        </div>
+        
+        <div class="task2">
+            <div style="background-color: red;">200px</div>
+            <div style="background-color: green;">200px</div>
+            <div style="background-color: yellow;">75px</div>
+        </div>
+
+        <div class="task3">
+            <div style="background-color: red;">1fr</div>
+            <div style="background-color: green;">1fr</div>
+            <div style="background-color: yellow;">1fr</div>
+            <div style="background-color: palevioletred;">1fr</div>
+            <div style="background-color: green;">1fr</div>
+            <div style="background-color: red;">1fr</div>
+            <div style="background-color: palevioletred;">1fr</div>
+            <div style="background-color: yellow;">1fr</div>
+        </div>
+
+
+</body>
+</html>
