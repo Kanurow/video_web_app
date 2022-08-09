@@ -71,3 +71,25 @@
 .tweet-button:active {
     opacity: .6;
 }
+
+.request-button {
+    background-color: black;
+    color: white;
+    width: 110px;
+    height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.4s;
+}
+
+.request-button:hover {
+    opacity: 0.8;
+    color: black;
+    border-color: black;
+    background-color: white;
+}
+
+.request-button:active {
+    opacity: 0.4;
+}

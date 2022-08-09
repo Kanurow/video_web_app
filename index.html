@@ -6,6 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube Clone</title>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript"></script>
+    <script>
+        $(document).ready(function(){
+            $('.hamburger-button').click(function(){
+                $('.sidebar').toggleClass('active');
+            }),
+            $('.hamburger-button').click(function(){
+                $('.body').toggleClass('activeBody')
+
+                //$('body').css("padding-left", "70px");
+            })
+        });
+    </script>
+
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -18,10 +35,12 @@
 
 </head>
 
-<body>
+<body class="body">
     <div class="header">
         <div class="left-section">
-            <img class="hamburger-menu" src="icons/hamburger-menu-icon.svg" alt="menu">
+            <button class="hamburger-button" >
+                <img class="hamburger-menu" id="hamburger" src="icons/hamburger-menu-icon.svg" alt="menu">
+            </button> 
             <img class="youtube-logo" src="icons/youtube-logo.svg" alt="">
         </div>
         <div class="middle-section">
@@ -494,6 +513,7 @@
         </div>
 
 
+        <script src="index.js">
 
 
 </body>

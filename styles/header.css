@@ -1,3 +1,10 @@
+.hamburger-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
 .search-bar {
     display: flex;
     font-size: 14px;
