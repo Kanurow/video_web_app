@@ -3,13 +3,25 @@ p {
     font-family: Roboto, Arial;
     margin-bottom: 0px;
 }
+
+:root {
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+}
+
+.dark-theme {
+    --primary-color: #212121;
+    --secondary-color: #fff;
+}
+
+
 body {
 
     margin: 0px;
     padding-top: 70px;
     padding-left: 25px;
     padding-right: 25px;
-    background-color: rgb(243, 244, 247);
+    background-color: var(--primary-color);
     overflow: scroll;
 
 }

@@ -1,9 +1,19 @@
+:root {
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+}
+
 .hamburger-button {
     border: none;
     background-color: transparent;
     cursor: pointer;
 }
 
+
+#moon-icon{
+    width: 25px;
+    cursor: pointer;
+}
 
 .search-bar {
     display: flex;
@@ -34,6 +44,7 @@
 .user-icon-container,
 .notifications-design,
 .apps-icon-section,
+.light-dark-container,
 .upload-icon-container {
     display: flex;
     justify-content: center;
@@ -45,12 +56,13 @@
 .apps-icon-section .tooltip,
 .user-icon-container .tooltip,
 .voice-search-button .tooltip,
+.light-dark-container .tooltip,
 .notifications-design .tooltip,
 .upload-icon-container .tooltip {
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
     background-color: gray;
-    color: white;
+    color: var(--primary-color);
     padding-left: 7px;
     padding-right: 7px;
     padding-top: 3px;
@@ -71,6 +83,7 @@
 .apps-icon-section:hover .tooltip,
 .voice-search-button:hover .tooltip,
 .notifications-design:hover .tooltip,
+.light-dark-container:hover .tooltip,
 .upload-icon-container:hover .tooltip {
     opacity: 1;
 }
@@ -124,7 +137,7 @@
     left: 0px;
     right: 0px;
 
-    background-color: white;
+    background-color: var(--primary-color);
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgb(158, 142, 142);
@@ -184,7 +197,7 @@
     top: -4px;
     right: -5px;
     border-radius: 10px;
-    color: white;
+    color: var(--primary-color);
     padding-left: 6px;
     padding-right: 6px;
     padding-top: 2px;

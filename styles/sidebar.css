@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+}
+
 .sidebar {
     display: flex;
     flex-direction: column;
@@ -6,6 +11,7 @@
     left: -150px;
     bottom: 0px;
     width: 70px;
+    background-color: var(--primary-color);
 }
 
 .active { 
@@ -13,7 +19,9 @@
 }
 
 
-
+.sidebar-text{
+    color: var(--secondary-color);
+}
 .sidebar-link {
     height: 75px;
     margin-bottom: 3px;
